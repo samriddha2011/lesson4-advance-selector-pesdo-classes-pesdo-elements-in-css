@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    color:cadetblue;
+}
+h1{
+    color: brown;
+}
+/*attribute selector */
+a{
+    color: coral;
+    text-decoration: none;
+
+}
+a:hover{
+    color: dodgerblue;
+}
+/*child selector*/
+ul>li{
+    font-weight: bolder;
+}
+/*sibling selector*/
+h1+p{
+    background-color: darkturquoise;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* :hover pesudo-class*/
+ul li:hover{
+    color:lightgreen
+}
+/* :nth-child(n) pseudo-element*/
+ul li:nth-child(2){
+    background-color:darkslateblue;
+}
+/* :not(selector) pseudo-class*/
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+/*::before pseduo-element*/
+ul li::before{
+    content: "☄️🚀";
+}
+/* ::after pesudo-element*/
+a::after{
+    content: "🎆";
+}
+
+/* ::first-letter pseduo-element*/
+p::first-letter{
+    font-size: 200%;
+    color:initial ;
+}
